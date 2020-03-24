@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en" class="no-focus">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>Sistema Evaluador de Resultados OFEP</title>
+
+        
+        
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Open Graph Meta -->        <meta property="og:title" content="Sistema Evaluador de Resultados">
+        <meta property="og:site_name" content="OFEP">
+        <meta property="og:description" content="Sistema Evaluador de Resultados de la Oficina Técnica para el Fortalecimiento de las Empresas en Bolivia">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.css">
+
+        <!-- Fonts and Codebase framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700">
+        <link rel="stylesheet" id="css-main" href="assets/css/codebase.css">
+        <link rel="stylesheet" id="css-theme" href="assets/css/themes/rojo.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+
+        <!-- Page Container -->
+        <!--
+            Available classes for #page-container:
+
+        GENERIC
+
+            'enable-cookies'                            Remembers active color theme between pages (when set through color theme helper Template._uiHandleTheme())
+
+        SIDEBAR & SIDE OVERLAY
+
+            'sidebar-r'                                 Right Sidebar and left Side Overlay (default is left Sidebar and right Side Overlay)
+            'sidebar-mini'                              Mini hoverable Sidebar (screen width > 991px)
+            'sidebar-o'                                 Visible Sidebar by default (screen width > 991px)
+            'sidebar-o-xs'                              Visible Sidebar by default (screen width < 992px)
+            'sidebar-inverse'                           Dark themed sidebar
+
+            'side-overlay-hover'                        Hoverable Side Overlay (screen width > 991px)
+            'side-overlay-o'                            Visible Side Overlay by default
+
+            'enable-page-overlay'                       Enables a visible clickable Page Overlay (closes Side Overlay on click) when Side Overlay opens
+
+            'side-scroll'                               Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (screen width > 991px)
+
+        HEADER
+
+            ''                                          Static Header if no class is added
+            'page-header-fixed'                         Fixed Header
+
+        HEADER STYLE
+
+            ''                                          Classic Header style if no class is added
+            'page-header-modern'                        Modern Header style
+            'page-header-inverse'                       Dark themed Header (works only with classic Header style)
+            'page-header-glass'                         Light themed Header with transparency by default
+                                                        (absolute position, perfect for light images underneath - solid light background on scroll if the Header is also set as fixed)
+            'page-header-glass page-header-inverse'     Dark themed Header with transparency by default
+                                                        (absolute position, perfect for dark images underneath - solid dark background on scroll if the Header is also set as fixed)
+
+        MAIN CONTENT LAYOUT
+
+            ''                                          Full width Main Content if no class is added
+            'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
+            'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
+        -->
+        <div id="page-container" class="sidebar-o enable-page-overlay side-scroll page-header-modern main-content-boxed">
+ 
+            <!-- MENU FLOTANTE CONTACTOS-->
+
+            <!-- Side Overlay-->
+            <aside id="side-overlay">
+                <!-- Side Header -->
+                <div class="content-header content-header-fullrow">
+                    <div class="content-header-section align-parent">
+                        <!-- Close Side Overlay -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-circle btn-dual-secondary align-v-r" data-toggle="layout" data-action="side_overlay_close">
+                            <i class="fa fa-times text-danger"></i>
+                        </button>
+                        <!-- END Close Side Overlay -->
+
+                        <!-- User Info -->
+                        <div class="content-header-item">
+<i class="si si-phone mr-5"></i><strong>:: CONTACTOS COMUNICACIÓN                    </div>
+</strong>                        <!-- END User Info -->
+                    </div>
+                </div>
+                <!-- END Side Header -->
+
+                <!-- Side Content -->
+                <div class="content-side">
+ 
+                    <!-- Tecnicos -->
+                    <div class="block pull-r-l">
+                        <div class="block-header bg-body-light">
+                            <h3 class="block-title">
+                                <i class="fa fa-fw fa-wrench font-size-default mr-5"></i>Asuntos Técnicos
+                            </h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <ul class="list list-activity">
+                                <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Ana Verónica Ramos</div>
+                                    <div>
+                                    Correo: <a href="maito:aramos@ofep.gob.bo">aramos@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 101</div>
+                                </li>
+                                  <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Jaime Escobar</div>
+                                    <div>
+                                    Correo: <a href="maito:jescobar@ofep.gob.bo">jescobar@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 206</div>
+                                </li>                              
+                                  <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Carlos Silva</div>
+                                    <div>
+                                    Correo: <a href="maito:csilva@ofep.gob.bo">csilva@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 205</div>
+                                </li>     
+                                                                  <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Leslie La Torre</div>
+                                    <div>
+                                    Correo: <a href="maito:llatorre@ofep.gob.bo">llatorre@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 209</div>
+                                </li>     
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END Tecnicos -->
+
+                    <!-- Legal -->
+                    <div class="block pull-r-l">
+                        <div class="block-header bg-body-light">
+                            <h3 class="block-title">
+                                <i class="fa fa-fw fa-gavel font-size-default mr-5"></i>Asuntos Legales
+                            </h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <ul class="list list-activity">
+                                <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Rilma Arcani Flores</div>
+                                    <div>
+                                    Correo: <a href="maito:rarcani@ofep.gob.bo">rarcani@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 301</div>
+                                </li>
+                                  <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Luis Ortuste Castillo</div>
+                                    <div>
+                                    Correo: <a href="maito:lortuse@ofep.gob.bo">lortuse@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 305</div>
+                                </li>                              
+                                  <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Maria Arce Mancilla</div>
+                                    <div>
+                                    Correo: <a href="maito:marce@ofep.gob.bo">marce@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 304</div>
+                                </li>     
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END Legal -->
+
+                    <!-- Varios -->
+                    <div class="block pull-r-l">
+                        <div class="block-header bg-body-light">
+                            <h3 class="block-title">
+                                <i class="fa fa-fw fa-plug font-size-default mr-5"></i>Asuntos Varios
+                            </h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <ul class="list list-activity">
+                                <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Ramiro Mora</div>
+                                    <div>
+                                    Correo: <a href="maito:rmora@ofep.gob.bo">rmora@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 501</div>
+                                </li>
+                                  <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Juan Pablo Illanes</div>
+                                    <div>
+                                    Correo: <a href="maito:jillanes@ofep.gob.bo">jillanes@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 502</div>
+                                </li>                              
+                                  <li>
+                                    <i class="si si-user text-success"></i>
+                                    <div class="font-w600">Maria Arce Mancilla</div>
+                                    <div>
+                                    Correo: <a href="maito:marce@ofep.gob.bo">marce@ofep.gob.bo</a> </div>
+                                    <div>Tel. 2129517 Int: 304</div>
+                                </li>     
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END Varios -->
+                    
+                </div>
+                <!-- END Side Content -->
+            </aside>
+            <!-- END Side Overlay -->
+
+            <!-- END MENU FLOTANTE CONTACTOS-->
+
+            <!-- Sidebar -->
+            <!--
+                Helper classes
+
+                Adding .sidebar-mini-hide to an element will make it invisible (opacity: 0) when the sidebar is in mini mode
+                Adding .sidebar-mini-show to an element will make it visible (opacity: 1) when the sidebar is in mini mode
+                    If you would like to disable the transition, just add the .sidebar-mini-notrans along with one of the previous 2 classes
+
+                Adding .sidebar-mini-hidden to an element will hide it when the sidebar is in mini mode
+                Adding .sidebar-mini-visible to an element will show it only when the sidebar is in mini mode
+                    - use .sidebar-mini-visible-b if you would like to be a block when visible (display: block)
+            -->
+            <nav id="sidebar">
+                <!-- Sidebar Content -->
+                <div class="sidebar-content">
+                    <!-- Side Header -->
+                    <div class="content-header content-header-fullrow px-15">
+                        <!-- Mini Mode -->
+                        <div class="content-header-section sidebar-mini-visible-b">
+                            <!-- Logo -->
+                            <span class="content-header-item font-w700 font-size-xl float-left animated fadeIn">
+                                <span class="text-dual-primary-dark">c</span><span class="text-primary">b</span>
+                            </span>
+                            <!-- END Logo -->
+                        </div>
+                        <!-- END Mini Mode -->
+
+                        <!-- Normal Mode -->
+                        <div class="content-header-section text-center align-parent sidebar-mini-hidden">
+                            <!-- Close Sidebar, Visible only on mobile screens -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
+                                <i class="fa fa-times text-danger"></i>
+                            </button>
+                            <!-- END Close Sidebar -->
+
+                            <!-- Logo -->
+                            <div class="content-header-item"> <a href="#"><img src="assets/media/ofep/logosm.png" width="158" height="90" alt=""/></a> </div>
+                            <!-- END Logo -->
+
+                        </div>
+                        <!-- END Normal Mode -->
+                    </div>
+                    <!-- END Side Header -->
+
+
+                    <!-- MENU PRINCIPAL -->
+                    <div class="content-side content-side-full">
+                        <ul class="nav-main">
+                            <li>
+                                <a class="active" href="http://empresas2.ofep.gob.bo:90/inicio"><i class="si si-cup"></i><span class="sidebar-mini-hide">Panel de inicio</span></a>
+                            </li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-visible">UI</span><span class="sidebar-mini-hidden">Menú Empresas</span></li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">Hechos Relevantes</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="http://empresas2.ofep.gob.bo:90/hechos_ver">Ver Hechos</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://empresas2.ofep.gob.bo:90/hechos_listar">Tipos de Hechos</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://empresas2.ofep.gob.bo:90/hechos_reporte">Reportes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-puzzle"></i><span class="sidebar-mini-hide">Planificación</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="http://empresas2.ofep.gob.bo:90/ver-institucion">Planificación de la Empresa</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://empresas2.ofep.gob.bo:90/ver-estrategico">Plan Estratégico Empresarial</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://empresas2.ofep.gob.bo:90/ver-operativos">Planes Operativos</a>
+                                    </li> 
+                                    <li>
+                                        <a href="http://empresas2.ofep.gob.bo:90/ver-documentos">Documentos de Interés</a>
+                                    </li>                                                                       
+                                </ul>
+                            </li>
+                            <li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-visible">MS</span><span class="sidebar-mini-hidden">Menú Sistema</span></li>
+                            <li>
+                                <a class="active" href="http://empresas2.ofep.gob.bo:90/ver-documentacion"><i class="si si-note"></i><span class="sidebar-mini-hide">Documentación</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- END MENU PRINCIPAL -->
+                    
+                </div>
+                
+                <!-- Sidebar Content -->
+            </nav>
+            <!-- END Sidebar -->
+
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header">
+                    <!-- Left Section -->
+                    <div class="content-header-section">
+                        <!-- Toggle Sidebar -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
+                            <i class="fa fa-navicon"></i>
+                        </button>
+                        <!-- END Toggle Sidebar -->
+
+                        <!-- Open Search Section -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="header_search_on">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <!-- END Open Search Section -->
+
+                    </div>
+                    <!-- END Left Section -->
+
+                    <!-- Right Section -->
+                    <div class="content-header-section">
+ 
+                        <!-- MENU USUARIO DROPDOWN -->
+                        
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user d-sm-none"></i>
+                                <span class="d-none d-sm-inline-block">MENÚ USUARIO</span>
+                                <i class="fa fa-angle-down ml-5"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
+                                <h5 class="h6 text-center py-10 mb-5 border-b text-uppercase">Usuario</h5>
+                                <a class="dropdown-item" href="http://empresas2.ofep.gob.bo:90/usuarios_datos">
+                                    <i class="si si-user mr-5"></i> Perfil de Usuario
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                    <span><i class="si si-envelope-open mr-5"></i> Comunicados</span>
+                                </a>
+
+                                <!-- Toggle Side Overlay - Esto activa el slider de la mano derecha -->
+                                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                <a class="dropdown-item" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_toggle">
+                                    <i class="si si-phone mr-5"></i> Contactos Comunicación
+                                </a>
+                                <!-- END Side Overlay -->
+
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="http://empresas2.ofep.gob.bo:90/logout">
+                                    <i class="si si-logout mr-5"></i> Cerrar Sesión
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END MENU USUARIO DROPDOWN -->
+
+                        <!-- Toggle Side Overlay -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="side_overlay_toggle">
+                            <i class="fa fa-question-circle"></i>
+                        </button>
+                        <!-- END Toggle Side Overlay -->
+                    </div>
+                    <!-- END Right Section -->
+                </div>
+                <!-- END Header Content -->
+
+                <!-- Header Search -->
+                <div id="page-header-search" class="overlay-header">
+                    <div class="content-header content-header-fullrow">
+                        <form action="be_pages_generic_search.html" method="post">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <!-- Close Search Section -->
+                                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                    <button type="button" class="btn btn-secondary" data-toggle="layout" data-action="header_search_off">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <!-- END Close Search Section -->
+                                </div>
+                                <input type="text" class="form-control" placeholder="Buscar en el sistema" id="page-header-search-input" name="page-header-search-input">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-secondary">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END Header Search -->
+
+                <!-- Header Loader -->
+                <!-- Please check out the Activity page under Elements category to see examples of showing/hiding it -->
+                <div id="page-header-loader" class="overlay-header bg-primary">
+                    <div class="content-header content-header-fullrow text-center">
+                        <div class="content-header-item">
+                            <i class="fa fa-sun-o fa-spin text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container-fluid">
+
+
+              <!-- BLOQUE CENTRAL INICIA AQUI -->
+
+                <div class="content">
+
+                    <!-- ENCABEZADO -->
+                    <div class="block block-rounded bg-gd-cherry">
+                        <div class="block-content bg-white-op-5">
+                            <div class="py-30 text-center">
+                                <h1 class="font-w700 text-white mb-10">Tablas</h1>
+                                <h2 class="h4 font-w400 text-white-op">Sistema Evaluador de Resultados OFEP</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END ENCABEZADO -->
+
+					<!-- CONTENIDO PRINCIPAL -->                 
+                  <div class="block">
+                     
+                     <!-- TABLA DEFAULT -->
+                    <h2 class="content-heading">Encabezado de la Tabla</h2>
+
+                    <!-- Table -->
+                    <div class="block">
+                        <div class="block-header block-header-default">
+                            <h3 class="block-title">Tabla</h3>
+                            <div class="block-options">
+                                <div class="block-options-item">
+                                    <code>.table</code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <table class="table table-vcenter">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" style="width: 50px;">#</th>
+                                        <th>Nombre</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 15%;">Etiqueta</th>
+                                        <th class="text-center" style="width: 100px;">Botones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center" scope="row">1</th>
+                                        <td>Brian Cruz</td>
+                                        <td class="d-none d-sm-table-cell">
+                                            <span class="badge badge-danger">Disabled</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row">2</th>
+                                        <td>José Cuervo</td>
+                                        <td class="d-none d-sm-table-cell">
+                                            <span class="badge badge-warning">Trial</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row">3</th>
+                                        <td>Mister Grey</td>
+                                        <td class="d-none d-sm-table-cell">
+                                            <span class="badge badge-success">VIP</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row">4</th>
+                                        <td>Jack Daniels</td>
+                                        <td class="d-none d-sm-table-cell">
+                                            <span class="badge badge-primary">Personal</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row">5</th>
+                                        <td>Steve Jobs</td>
+                                        <td class="d-none d-sm-table-cell">
+                                            <span class="badge badge-danger">Disabled</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row">6</th>
+                                        <td>Mónica Belucci</td>
+                                        <td class="d-none d-sm-table-cell">
+                                            <span class="badge badge-warning">Trial</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END TABLA DEFAULT -->
+                </div>
+                <!-- END CONTENIDO PRINCIPAL -->
+
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="page-footer" class="opacity-0">
+                <div class="content py-20 font-size-xs clearfix">
+                    <div class="float-right">
+                        Programado con <i class="fa fa-heart text-pulse"></i> por la <a class="font-w600" href="http://www.ofep.gob.bo" target="_blank">OFEP-  Bolivia</a>
+                    </div>
+                    <div class="float-left">
+
+                    </div>
+                </div>
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+
+
+
+
+        <!--
+            Codebase JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_es6/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/jquery.countTo.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+        <script src="assets/js/codebase.core.min.js"></script>
+
+        <!--
+            Codebase JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_es6/main/app.js
+        -->
+        <script src="assets/js/codebase.app.min.js"></script>
+
+        <!-- Page JS Plugins -->
+        <script src="assets/js/plugins/chartjs/Chart.bundle.min.js"></script>
+        <script src="assets/js/plugins/slick/slick.min.js"></script>
+
+        <!-- Page JS Code -->
+        <script src="assets/js/pages/be_pages_dashboard.min.js"></script>
+
+<script type="text/javascript">
+
+$('a[rel=modalu]').on('click', function(evt) {
+    evt.preventDefault();
+    var modal = $('#modalu').modal();
+    modal
+        .find('.modal-body')
+        .load($(this).attr('href'), function (responseText, textStatus) {
+            if ( textStatus === 'success' ||
+                 textStatus === 'notmodified')
+            {
+                modal.show();
+            }
+    });
+});
+
+$('a[rel=modal]').on('click', function(evt) {
+    evt.preventDefault();
+    var modal = $('#modal').modal();
+    modal
+        .find('.modal-body')
+        .load($(this).attr('href'), function (responseText, textStatus) {
+            if ( textStatus === 'success' ||
+                 textStatus === 'notmodified')
+            {
+                modal.show();
+            }
+    });
+});
+$('a[rel=modal2]').on('click', function(evt) {
+    evt.preventDefault();
+    var modal = $('#modal2').modal();
+    modal
+        .find('.modal-body')
+        .load($(this).attr('href'), function (responseText, textStatus) {
+            if ( textStatus === 'success' ||
+                 textStatus === 'notmodified')
+            {
+                modal.show();
+            }
+    });
+});
+
+
+$('a[rel=modal3]').on('click', function(evt) {
+    evt.preventDefault();
+    var modal = $('#modal3').modal();
+    modal
+        .find('.modal-body')
+        .load($(this).attr('href'), function (responseText, textStatus) {
+            if ( textStatus === 'success' ||
+                 textStatus === 'notmodified')
+            {
+                modal.show();
+            }
+    });
+});
+</script>
+
+    </body>
+</html>
