@@ -25,7 +25,9 @@ class HomeController extends Controller
         \Session::put('item', '1.');
         $notifiationsC = null;
         $notifiationsC = list_x_comte(Auth()->user()->id);
-        return view('home', compact('notifiationsC'));
+        $ids = \App\Act_User::where('user_id',Auth()->user()->id)->where('created_at','>',date('Y-01-01 00:00:00'))->pluck('act_id')->toarray();
+        $acts = \App\Act::wherein('id',$ids)->where('state_id','>','1')->get();
+        return view('home', compact('notifiationsC','acts'));
     }
     public function ldap($name){
         if($name!=''){

@@ -58,10 +58,10 @@ class LoginController extends Controller
     //protected $redirectTo = '/home';
 
     public function login(Request $request){
-        $use = $this->ldap->search()->users()->find($request->username);
-        if(is_null($use)){
-            //dd($use);
-        }
+        // $use = $this->ldap->search()->users()->find($request->username);
+        // if(is_null($use)){
+        //     //dd($use);
+        // }
         $credentials1 = $request->validate([
             'username' => 'required',
             'password' => 'required|min:6',

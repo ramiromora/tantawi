@@ -4,13 +4,55 @@
     <div class="col-md-12">
         <div class="box box-solid">
         <div class="box-header with-border">
-            <h3 class="box-title">Actas Pendientes</h3>
+            <h3 class="box-title">Participacion en Actas</h3>
         </div>
             <div class="box-body">                
-                Por favor lea las actas antes de firmarlas
+                {{-- Por favor lea las actas antes de firmarlas --}}
             </div>
         </div>
     </div>
+
+    <div class="block block-themed table-responsive">
+        <div class="block-content">
+            <div class=" table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Fecha</th>
+                        <th>Convocante</th>
+                        <th>Estado</th>
+                        <th>Ver</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @forelse($acts as $act)
+                        <tr>
+                            
+                            <td>{{ $act->title }}</td>
+                            <td>{{ obtenerFechaEnLetra($act->date) }}</td>
+                            <td>{{ buscanombre($act->user_id) }}</td>
+                            @if($act->state_id==2)
+                            <td class="table-success">Validada</td>
+                            @endif                            
+                            <td>
+                                <a href="act/{{ $act->id }}/show" class="btn btn-info">Ver Acta</a>
+                            </td>
+                        </tr>
+                    @empty
+                        <tr>
+                            <td colspan="8" class="text-center"> Sin Regitros</td>
+                        </tr>
+                    @endforelse
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    @php
+        
+ /*
     <div class="block block-themed table-responsive">
         <div class="block-content">
             <div class=" table-responsive">
@@ -84,6 +126,8 @@
             </div>
         </div>
     </div>
+    */
+    @endphp
     <!-- END Row #1 -->
 </div>
 @endsection

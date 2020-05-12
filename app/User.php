@@ -37,4 +37,7 @@ class User extends Authenticatable
     {
         return 'Y-m-d H:i:s.u';
     }
+    public function participation(){
+        return null;
+    }
 }
