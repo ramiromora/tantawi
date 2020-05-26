@@ -26,7 +26,7 @@
             @endforelse
             <tr>
                 <td>
-                    <button type="button" onclick="opfrm({{$empresa->id}})" class="btn btn-alt-info" data-toggle="modal" data-target="#modal-popout"><i class="fa fa-plus"></i> Agregar participante externo</button>
+                    <button type="button" onclick="opfrm({{$empresa->id}})" class="btn btn-alt-info" data-toggle="modal" data-target="#modal-popout"><i class="fa fa-plus"></i> Agregar participante</button>
                 </td>
             </tr>
         @empty

@@ -21,6 +21,7 @@ class Act extends Model
         'quantity',
         'title',
         'date',
+        'datef',
         'time',
         'timef',
         'state_id',

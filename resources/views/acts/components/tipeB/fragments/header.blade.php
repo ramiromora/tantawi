@@ -1,32 +1,29 @@
-
 <div class="block">
     <div class="block-header block-header-default">
         <h3 class="block-title">Datos de la reunión</h3>
         <div class="block-options">
             <button type="button" class="btn-block-option" data-toggle="block-option" data-action="fullscreen_toggle"><i class="si si-size-fullscreen"></i></button>
-            
             <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"><i class="si si-arrow-up"></i></button>
         </div>
     </div>
     <div class="block-content">
-    {{ Form::hidden('user_id',auth()->user()->id) }}
+    {{ Form::hidden('user_id',auth()->user()->id)}}
     <div class="form-group">
         {{ Form::label('companys', 'Empresas Participes del Acta')}}
         {{ Form::select('companys[]', $companys ,null, ['class' => 'form-control select2-multiples', 'id'=>"companys" ,'required', 'multiple'=>'multiple']) }}
     </div>
-    <!--agregar tambien estas estiquetas nuevas-->
     <div class="form-group">
         {{ Form::label('departaments', 'Unidad o departamento que llevo la reunión') }}
         {{ Form::select('departaments[]', $departments ,null, ['class'=>'form-control select2-multiples','id'=>"departaments",'onchange'=>"mF4()",'required', 'multiple'=>'multiple']) }}
     </div>
-    <div class="form-group">
-            <div id="miembros">
-                <div class="form-group">
-                    {{ Form::label('users', 'Participantes de la OFEP') }}
-                    {{ Form::select('users[]', $users ,null, ['class'=>'form-control select2-multiples','id'=>"users",'multiple'=>'multiple']) }}
-                </div>
-            </div>
+    
+    <div id="miembros">
+        <div class="form-group">
+            {{ Form::label('users', 'Participantes de la OFEP') }}
+            {{ Form::select('users[]', $users ,null, ['class'=>'form-control select2-multiples','id'=>"users",'multiple'=>'multiple']) }}
+        </div>
     </div>
+    
     <div class="form-group">
         {{ Form::label('title', 'Tema de reunión') }}
         {{ Form::text('title', null, ['class' => 'form-control','required']) }}
@@ -45,6 +42,12 @@
         {{ Form::date('date', $dat, ['class' => 'form-control pull-right', 'id' => 'datepicker', 'required' ]) }}
     </div>
     @endif
+    <br>
+    <div class="form-group">
+        {{ Form::label('datef', 'Fecha de finalización de la reunión (dejar en blanco si la reunion concluye el mismo día)') }}
+        {{ Form::date('datef', null, ['class' => 'form-control pull-right', 'id' => 'datepicker' ]) }}
+    </div>
+    <br>
     {{ Form::label('time', 'Hora de inicio') }}
     <div class="input-group">
         {{ Form::time('time', (!isset($act))?date('H:m'):null, ['class' => 'form-control timepicker', 'required']) }}
@@ -52,7 +55,7 @@
     <br>
     {{ Form::label('timef', 'Hora de final') }}
     <div class="input-group">
-        {{ Form::time('timef',(!isset($act))?date('H:m'):null, ['class' => 'form-control timepicker', 'required']) }}
+        {{ Form::time('timef',(!isset($act))?date('H:m'):null, ['class' => 'form-control timepicker', 'required', 'onblur' => 'val_hr()']) }}
     </div>
     <br>
     @if (isset($act))
@@ -101,6 +104,7 @@
     </div>
 </div>
 </div>
+
 
 
 

@@ -69,11 +69,14 @@
                         <font style="font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
                                 {{\App\Parametric::where('value',$act->location)->first()->description }},
                                 {{obtenerFechaEnLetra($act->date)}}
+                                @if (!is_null($act->datef))
+                                    al {{obtenerFechaEnLetra($act->datef)}}
+                                @endif
                         </font>
                     </td>
                     <td align="right">
                         <font style="font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
-                                ACTA DE REUNION ERP N° {{($act->correlative>0)? correlativo($act->correlative) : 'Borrador['.$act->id.']' }} / {{'2020'}}
+                                ACTA DE REUNION N° {{($act->correlative>0)? correlativo($act->correlative) : 'Borrador['.$act->id.']' }} / {{'2020'}}
                         </font>
                     </td>
                 </tr>

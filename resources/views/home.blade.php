@@ -33,10 +33,10 @@
                             <td>{{ obtenerFechaEnLetra($act->date) }}</td>
                             <td>{{ buscanombre($act->user_id) }}</td>
                             @if($act->state_id==2)
-                            <td class="table-success">Validada</td>
+                            <td class="table-danger">Validada</td>
                             @endif                            
                             <td>
-                                <a href="act/{{ $act->id }}/show" class="btn btn-info">Ver Acta</a>
+                                <a href="act/{{ $act->id }}/show" class="btn btn-danger">Ver Acta</a>
                             </td>
                         </tr>
                     @empty

@@ -31,6 +31,8 @@ Route::get('act/{id}/pdf','ActController@pdf')->name('act.pdf')->middleware('per
 Route::get('act/{id}/check','ActController@check')->name('act.validate')->middleware('permission:validate.act');
 Route::put('act/edit/content','ActController@autoSave')->middleware('permission:edit.act');
 Route::get('act/{id}/notify','ActController@sendEmail')->middleware('permission:validate.act');
+Route::get('trash','ActController@trash')->name('act.trash')->middleware('permission:read.act');
+Route::post('act/{id}/destroy','ActController@destroy')->name('act.destroy')->middleware('permission:validate.act');
 
 Route::post('guest/store','GuestController@store')->name('guest.store')->middleware('permission:create.guest');
 Route::get('guest/index','GuestController@index')->name('guest.index')->middleware('permission:read.guest');

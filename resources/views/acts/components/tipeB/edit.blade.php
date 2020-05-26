@@ -26,7 +26,7 @@
                 @default
                 @break
             @endswitch
-            <button type="submit" class="btn btn-success">Aceptar</button>
+            <button type="submit" class="btn btn-danger">Aceptar</button>
         {!! Form::close() !!}
     </div>
 </div>
@@ -80,6 +80,7 @@
 @switch($type)
     @case('header')
         @section('scripts')
+        <script src="{{ asset('js/moment.min.js') }}" defer></script>
         <script src="{{ asset('js/custom.js') }}" defer></script>
         <script src="{{ asset('vendor/select2/js/select2.js') }}" defer></script>
         
@@ -133,11 +134,11 @@
                 sessionStorage.setItem("bod2", 0);
                 CKEDITOR.replace( 'editor1', {
                     language: 'es-mx',
-                    uiColor: '#9AB8F3'
+                    uiColor: '#dddddd'
                 });
                 CKEDITOR.replace( 'editor2', {
                     language: 'es-mx',
-                    uiColor: '#9AB8F3'
+                    uiColor: '#dddddd'
                 });
                 ///para el Auto guardado
                 var edi1 = 'editor1';

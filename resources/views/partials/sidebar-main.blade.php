@@ -24,7 +24,7 @@
                     <a href="/acts" class="{{(strstr($item,':',true)=='2.2')? "active":null}}"><span>ACTAS REGISTRADAS</span></a>
                 </li>
                 <li>
-                    <a href="#"><span>ARCHIVO</span></a>
+                    <a href="/trash"  class="{{(strstr($item,':',true)=='2.3')? "active":null}}"><span>ACTAS BORRADAS</span></a>
                 </li>
             </ul>
         </li>

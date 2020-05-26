@@ -65,13 +65,16 @@
                         <span class="float-left">
                             {{\App\Parametric::where('value',$act->location)->first()->description }},
                             {{obtenerFechaEnLetra($act->date)}}
+                            @if (!is_null($act->datef))
+                                al {{obtenerFechaEnLetra($act->datef)}}
+                            @endif
                         </span>
                     </font>
                 </td>
                 <td colspan="3">
                     <font face="Arial, serif" style="font-weight:bold;">
                         <span class="float-right">
-                            ACTA DE REUNION ERP N° {{($act->correlative>0)? correlativo($act->correlative) : 'Borrador ['.$act->id.']' }} / {{'2020'}}
+                            ACTA DE REUNION N° {{($act->correlative>0)? correlativo($act->correlative) : 'Borrador ['.$act->id.']' }} / {{'2020'}}
                         </span>
                     </font>
                 </td>
@@ -228,11 +231,11 @@
     <table class="table table-bordered"  width="100%" cellpadding="1" cellspacing="0" >
         <thead>
             <tr>
-                <th>Nº</th>
+                <th width="2">Nº</th>
                 <th>Nombre Completo</th>
                 <th>Cargo</th>
                 <th>Institución</th>
-                <th>Teléfono</th>
+                <th width="2">Teléfono</th>
                 <th>Email</th>
                 <th>Firma</th>
             </tr>
@@ -249,7 +252,7 @@
                 <td style="font-size:12px;">{{'OFEP'}}</td>
                 <td style="font-size:12px;">{{$user->number}}</td>
                 <td style="font-size:12px;">{{$user->email}}</td>
-                <td style="font-size:12px;">___________________</td>
+                <td style="font-size:12px;">___________</td>
             </tr>
             @empty
                 <tr>
@@ -276,13 +279,13 @@
                                                 substr($user->email,100,20)."\n".
                                                 substr($user->email,120,20)."\n".
                                                 substr($user->email,140,20)}} </td>
-                <td style="font-size:12px;">___________________</td>
+                <td style="font-size:12px;">___________</td>
             </tr>
             @empty
                 <tr>
                     <td colspan="7" >
                         <div class="row">
-                            <div class="mx-auto">-- NO HAY INVITADOS EXTERNOS REGISTRADOS --</div>
+                            <div class="mx-auto">-- . --</div>
                         </div>
                     </td>
                 </tr>

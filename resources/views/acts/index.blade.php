@@ -3,7 +3,7 @@
 <div>
 <h3>Mis Actas</h3>
 @can('create.act')
-    <a href="create" class="btn btn-success btn-sm"> <i class="fa fa-plus"></i> Crear Acta</a>
+    <a href="create" class="btn btn-danger btn-sm"> <i class="fa fa-plus"></i> Crear Acta</a>
 @endcan
 <hr>
 <div class="table-responsive">
@@ -53,7 +53,7 @@
             <td class="bg-green disabled color-palette">Archivado</td>
             @endif
             <td>
-                <a href="{{ route('act.show',['id' =>$id] ) }}" class="btn btn-sm btn-info"> <i class="fa fa-eye"></i></a>
+                <a href="{{ route('act.show',['id' =>$id] ) }}" class="btn btn-sm btn-danger" title="Ver Acta"> <i class="fa fa-eye"></i></a>
             </td>
             
         </tr>

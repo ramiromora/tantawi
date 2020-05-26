@@ -1116,7 +1116,7 @@ function miembros_departamento($departament_id){
 
 function miembros_departamentos($dep_ids = null){
     if(is_null($dep_ids))
-        return 0;
+        return 0;///DB::raw('count(*) as user_count, status')
     $users = \App\User::wherein('departament_id',$dep_ids)->where('id','!=',Auth::User()->id)->select('departament_id','name','id')->orderBy('users.name','ASC')->get();
     return $users;
 }

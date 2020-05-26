@@ -44,6 +44,40 @@ function myFunction3() {
         }
     })               
 }
+function depp(key){
+    switch (key) {
+        case 1:
+            return "UGI";
+            break;
+        case 2:
+            return "DAGET";
+            break;
+        case 3:
+            return "UAF";
+            break;
+        case 4:
+            return "DGE";
+            break;
+        case 5:
+            return "DAJ";
+            break;
+        default:
+            break;
+    }
+}
+
+function val_hr(){
+    var incio = $("#time").val();
+    var fin = $("#timef").val();
+    var horaInicio = moment(incio, 'h:m');
+    var horaFin = moment(fin, 'h:m');
+    if(!moment(horaInicio).isBefore(horaFin)){
+        toastr.warning('Atención la hora de finalización establecida supera a la hora de incio', 'Advertencia de la Hora establecida');
+    }
+    
+}
+
+
 function mF4() {
     var ids = new Array();
     $( "#departaments option:selected" ).each(function() {
@@ -61,7 +95,9 @@ function mF4() {
             $('#miembros').fadeIn();
             var str1 = "<label for='users'>Participantes de la OFEP </label> <select class='form-control select2-multiples' id='users' name='users[]'  multiple='multiple'> ";
             $.each(data,function(index,val){
-                str1 = str1.concat("<option value='"+val.id+"' >"+val.name+"</option>");
+                str1 += "<option value='"+val.id+"' >";
+                str1 += "["+depp(val.departament_id)+ "] "+val.name;
+                str1 += "</option>";
             });
             str1 = str1.concat("</select>");
             $('#miembros').html(str1); 

@@ -72,7 +72,7 @@ class ActController extends Controller
                 return view('acts.components.tipeB.create',compact('companys','users','departments','departamentos'));
                 break;
             default:
-                $tipes = parametrica_get('acta_tipos')->get();
+                $tipes = parametrica_get('acta_tipos')->where('conector','!=',null)->get();
                 return view('acts.components.create',compact('tipes'));
             break;
         }
@@ -180,12 +180,12 @@ class ActController extends Controller
                     array_push ( $arre , (string)\Auth::user()->id );
                     $inv = $act->convocate($arre);
                 }
-                toastr()->success('Borrador Generado se Agregaron a '.$inv.' participantes','Acta Generada');
+                toastr()->success('Borrador Generado, se agregaron a '.$inv.' participantes','Acta generada correctamente');
                 $id = $act->id;
                 return redirect()->route('act.show',compact('id'));
                 break; 
             default:
-                toastr()->error('Error al generar Acta','Error el acta no se pudo generar');
+                toastr()->error('Error al generar Acta','Error el acta no se pudo generar clase desconocida');
                 return redirect()->back();
                 break;
         }
@@ -660,6 +660,12 @@ class ActController extends Controller
         $orders         = busca_orders($id);
         return view('acts.show_ne',compact('act','guests','orders','users','principal'));
     }
+    public function trash(){
+        \Session::put('item', '2.3:');
+        $acts = DB::table('acts')->where('user_id',Auth()->user()->id)->where('deleted_at','!=',null)->orderby('created_at','DESC')->get();
+        return view('acts.trash',compact('acts'));
+    }
+
 
 
 

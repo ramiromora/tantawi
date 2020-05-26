@@ -15,13 +15,14 @@
             {{csrf_field()}}
             {{ Form::hidden('type','B')}}
             @include('acts.components.tipeB.fragments.header')
-            <button type="submit" class="btn btn-default">Crear Acta</button>
+            <button type="submit" class="btn btn-danger" >Crear Acta</button>
         {!! Form::close() !!}
     </div>
 </div>
 <strong><small>Responsable: {{ Auth::user()->name }}</small></strong>
 @endsection
 @section('scripts')
+<script src="{{ asset('js/moment.min.js') }}" defer></script>
 <script src="{{ asset('js/custom.js') }}" defer></script>
 <script src="{{ asset('vendor/select2/js/select2.js') }}" defer></script>
 <script>

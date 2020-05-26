@@ -6,7 +6,7 @@
 <div>
 <h3>Directorio de Contactos</h3>
 @can('create.act')
-    <a href="create" class="btn btn-success btn-sm"> <i class="fa fa-plus"></i> Agregar Contacto</a>
+    <a href="create" class="btn btn-danger btn-sm"> <i class="fa fa-plus"></i> Agregar Contacto</a>
 @endcan
 <hr>
 <div class="table-responsive">

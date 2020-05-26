@@ -14,7 +14,7 @@
                 {!! Form::model($guest, ['route' => ['guest.update'],'method' => 'PUT'] )!!}
                 {{ Form::hidden('id', $guest->id )}}
                 @include('guests.fragment.form1')
-                <button type="submit" class="btn btn-success">Modificar</button>
+                <button type="submit" class="btn btn-danger">Modificar</button>
                 {!! Form::close() !!}
             </div>
         </div>
